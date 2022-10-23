@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Suite" thread-count="10" parallel="methods">
+    <listeners>
+        <listener class-name="selenium.pageobject.listeners.TestListener"/>
+    </listeners>
+    <test name="MBI-S tests">
+        <packages>
+            <package name="com.gemalto.coesys.mbi.seleniumTests.tests.*"/>
+        </packages>
+    </test>
+</suite>
